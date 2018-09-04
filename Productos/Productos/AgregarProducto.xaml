@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Productos.AgregarProducto"
+             Title="Agregar producto">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="MenuItem1" Order="Primary" Icon="listo.png" Text="Guardar" Priority="0" Clicked="MenuItem1_Clicked" />
+        <ToolbarItem Name="MenuItem1" Order="Primary" Icon="camara.png" Text="Foto" Priority="0" Clicked="MenuItem1_Clicked_1" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="35,15,15,15">
+                <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                    <Image x:Name="PhotoImage" />
+                </StackLayout>
+                
+                <Label Text="Nombre" FontSize="Medium"/>
+                <Entry x:Name="nombre"/>
+                <Label Text="Precio de venta" FontSize="Medium"/>
+                <Entry x:Name="preciodeventa" Keyboard="Numeric"/>
+                <Label Text="Cantidad" FontSize="Medium"/>
+                <Entry x:Name="cantidad" Keyboard="Numeric"/>
+                <Label Text="Precio de costo" FontSize="Medium"/>
+                <Entry x:Name="preciodecosto" Keyboard="Numeric"/>
+                <Label Text="Descripcion:" FontSize="Medium"/>
+                <Editor x:Name="descipcion" HeightRequest="100"/>
+                <Label Text="Foto URL" FontSize="Medium"/>
+                <Entry x:Name="foto"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
